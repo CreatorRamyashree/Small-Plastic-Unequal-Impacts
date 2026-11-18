@@ -1,0 +1,380 @@
+
+/* GENERAL PAGE STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf6fa;
+    color: #23445b;
+}
+
+/* NAVIGATION BAR */
+
+.topnav {
+    background-color: #075b83;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+}
+
+/* WEBSITE TITLE AND DESCRIPTION */
+
+.topnav > div:first-child {
+    flex: 1 1 550px;
+    padding: 5px 10px;
+}
+
+.topnav h2 {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.topnav p {
+    color: #cceaf3;
+    font-size: 14px;
+    margin: 5px 0 5px 45px;
+}
+
+/* NAVIGATION LINKS */
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #8bcbd9;
+    color: #064e75;
+    border-radius: 5px;
+}
+
+.topnav a.active {
+    background-color: #a8dce5;
+    color: #86d1f4;
+    border-radius: 5px;
+}
+
+/* IMAGE CAROUSEL */
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#myCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+/* CAROUSEL INDICATORS */
+
+.carousel-indicators li {
+    border-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: #28a6b8;
+}
+
+/* CAROUSEL ARROWS */
+
+.carousel-control {
+    background-image: none !important;
+    opacity: 0.8;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #075b83;
+    color: #cceaf3;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 8px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    .topnav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topnav > div:first-child {
+        width: 100%;
+    }
+
+    .topnav h2 {
+        font-size: 21px;
+    }
+
+    .topnav p {
+        margin: 8px 0;
+    }
+
+    .topnav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .carousel-inner > .item > img {
+        height: 250px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0;
+    }
+}
+
+/* Layered ocean waves above the footer */
+footer {
+    position: relative;
+    margin-top: 100px;
+    padding: 45px 10px 25px;
+}
+
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+}
+
+footer::before {
+    top: -65px;
+    height: 70px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath fill='%23c5e8f5' d='M0 45 Q180 0 360 45 T720 45 T1080 45 T1440 45 L1440 100 L0 100Z'/%3E%3C/svg%3E");
+}
+
+footer::after {
+    top: -45px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath fill='%239ed5ed' fill-opacity='.75' d='M0 55 Q180 100 360 55 T720 55 T1080 55 T1440 55 L1440 100 L0 100Z'/%3E%3C/svg%3E");
+}
+
+
+
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf8ff;
+    color: #23445a;
+}
+
+/* Navigation bar */
+.topnav {
+    background-color: #087eae;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+}
+
+.topnav h2 {
+    color: white;
+    font-size: 23px;
+    margin: 10px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #13b9cf;
+    border-radius: 8px;
+}
+
+.topnav a.active {
+    background-color: #075b83;
+    border-radius: 8px;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #087eae;
+    font-size: 32px;
+    margin: 40px 0 25px;
+}
+
+/* Review form */
+form {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 25px;
+    background-color: #bce8fa !important;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 80, 120, 0.15);
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #48a9d5;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+legend {
+    color: #075b83;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form labels */
+form label {
+    color: #164c68;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Text and date inputs */
+form input:not([type="radio"]) {
+    padding: 10px;
+    border: 1px solid #75bcd9;
+    border-radius: 7px;
+    margin: 5px;
+    max-width: 100%;
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid #087eae;
+}
+
+/* Rating buttons */
+form input[type="radio"] {
+    accent-color: #087eae;
+    margin: 8px;
+}
+
+/* Submit button */
+form button {
+    background-color: #087eae;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #05a9bd;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    line-height: 1.2;
+}
+
+/* Overlapping light-blue waves above footer */
+footer {
+    position: relative;
+    margin-top: 80px;
+}
+
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    background-repeat: repeat-x;
+}
+
+footer::before {
+    top: -45px;
+    height: 50px;
+    background: #c5e8f5;
+    clip-path: polygon(
+        0 55%, 15% 15%, 30% 55%, 45% 20%,
+        60% 60%, 75% 15%, 90% 55%, 100% 25%,
+        100% 100%, 0 100%
+    );
+}
+
+footer::after {
+    top: -25px;
+    height: 35px;
+    background: #91d5ef;
+    opacity: 0.8;
+    clip-path: polygon(
+        0 20%, 15% 70%, 30% 25%, 45% 75%,
+        60% 20%, 75% 65%, 90% 25%, 100% 60%,
+        100% 100%, 0 100%
+    );
+}
+
+/* Mobile-friendly layout */
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topnav a {
+        text-align: center;
+    }
+
+    form {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
